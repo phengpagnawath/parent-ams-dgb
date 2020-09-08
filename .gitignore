@@ -1,0 +1,3 @@
+# Project exclude paths
+/ams-ui/target/
+/asm-api/target/

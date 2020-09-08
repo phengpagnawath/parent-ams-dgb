@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+  <th:block th:replace="fragments/meta" />
+
+  <title>DGB - Article Management System</title>
+
+  <th:block th:replace="fragments/style" />
+
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+
+  <th:block th:replace="fragments/navbar" />
+
+  <th:block th:replace="fragments/slideshow" />
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid" layout:fragment="contain">
+
+        <!-- render contain here -->
+
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <th:block th:replace="fragments/footer" />
+
+  <!-- End your project here-->
+
+  <!-- REQUIRED SCRIPTS -->
+  <th:block th:replace="fragments/script"/>
+
+  <th:block layout:fragment="scripts"></th:block>
+
+</body>
+
+</html>
